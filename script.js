@@ -119,6 +119,15 @@ document.getElementById('sNext').addEventListener('click', () => { sGoTo(sCurren
 function resetSAuto() { clearInterval(sAuto); sAuto = setInterval(() => sGoTo(sCurrent + 1), 6000); }
 sAuto = setInterval(() => sGoTo(sCurrent + 1), 6000);
 
+// ── Rechtsgebiet Chips ────────────────────────
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    document.getElementById('rechtsgebietInput').value = chip.dataset.val;
+  });
+});
+
 // ── Contact Form ──────────────────────────────
 document.getElementById('contactForm').addEventListener('submit', e => {
   e.preventDefault();

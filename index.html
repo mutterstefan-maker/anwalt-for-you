@@ -311,79 +311,111 @@
   </section>
 
   <!-- Kontakt -->
-  <section class="section kontakt" id="kontakt">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="ornament"><span></span><i class="fa-solid fa-envelope"></i><span></span></div>
-        <h2>Kontakt aufnehmen</h2>
-        <p>Schildern Sie uns Ihr Anliegen – wir melden uns innerhalb von 24 Stunden.</p>
+  <section class="kontakt-split" id="kontakt">
+    <!-- Linke Seite: Karte + Infos -->
+    <div class="ks-left">
+      <div class="ks-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.1!2d11.5820!3d48.1391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a150bedc!2sMaximilianstra%C3%9Fe%2C%2080539%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1715000000000"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Kanzlei Standort">
+        </iframe>
+        <div class="ks-map-overlay"></div>
       </div>
-      <div class="kontakt-layout">
-        <div class="kontakt-info reveal">
-          <div class="ki-card">
-            <div class="ki-icon"><i class="fa-solid fa-phone"></i></div>
-            <div><strong>Telefon</strong><a href="tel:+498912345678">+49 89 123 456 78</a></div>
-          </div>
-          <div class="ki-card">
-            <div class="ki-icon"><i class="fa-solid fa-envelope"></i></div>
-            <div><strong>E-Mail</strong><a href="mailto:info@anwalt-for-you.de">info@anwalt-for-you.de</a></div>
-          </div>
-          <div class="ki-card">
-            <div class="ki-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div><strong>Kanzlei</strong><span>Maximilianstraße 1<br/>80539 München</span></div>
-          </div>
-          <div class="ki-card">
-            <div class="ki-icon"><i class="fa-solid fa-clock"></i></div>
-            <div><strong>Sprechzeiten</strong><span>Mo–Fr: 08:00 – 18:00 Uhr<br/>Notfall: 24/7 erreichbar</span></div>
-          </div>
-          <div class="ki-note">
-            <i class="fa-solid fa-shield-halved"></i>
-            <p>Alle Anfragen werden streng vertraulich behandelt. Ihre Daten werden nicht an Dritte weitergegeben.</p>
+      <div class="ks-info reveal">
+        <div class="ks-logo">
+          <div class="nav-monogram">AFY</div>
+          <div>
+            <p class="ks-kanzlei-name">Anwalt for you</p>
+            <p class="ks-kanzlei-sub">Rechtsanwaltskanzlei</p>
           </div>
         </div>
-        <form class="kontakt-form reveal" id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
+        <div class="ks-details">
+          <a href="tel:+498912345678" class="ks-detail-row">
+            <div class="ks-detail-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span>Telefon</span>
+              <strong>+49 89 123 456 78</strong>
+            </div>
+          </a>
+          <a href="mailto:info@anwalt-for-you.de" class="ks-detail-row">
+            <div class="ks-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span>E-Mail</span>
+              <strong>info@anwalt-for-you.de</strong>
+            </div>
+          </a>
+          <div class="ks-detail-row">
+            <div class="ks-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span>Adresse</span>
+              <strong>Maximilianstraße 1, 80539 München</strong>
+            </div>
+          </div>
+          <div class="ks-detail-row">
+            <div class="ks-detail-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <span>Sprechzeiten</span>
+              <strong>Mo–Fr 08:00–18:00 · Notfall 24/7</strong>
+            </div>
+          </div>
+        </div>
+        <div class="ks-vertraulich">
+          <i class="fa-solid fa-lock"></i>
+          <span>Streng vertraulich · Anwaltliches Berufsgeheimnis</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rechte Seite: Formular -->
+    <div class="ks-right">
+      <div class="ks-form-wrap reveal">
+        <div class="ks-form-header">
+          <div class="ornament left-align"><span></span><i class="fa-solid fa-scale-balanced"></i><span></span></div>
+          <h2>Mandatsanfrage</h2>
+          <p>Schildern Sie uns Ihr Anliegen – diskret, unverbindlich und kostenlos.</p>
+        </div>
+        <form id="contactForm">
+          <div class="ks-field-row">
+            <div class="ks-field">
+              <input type="text" name="vorname" placeholder=" " required />
               <label>Vorname *</label>
-              <input type="text" name="vorname" placeholder="Max" required />
             </div>
-            <div class="form-group">
+            <div class="ks-field">
+              <input type="text" name="nachname" placeholder=" " required />
               <label>Nachname *</label>
-              <input type="text" name="nachname" placeholder="Mustermann" required />
             </div>
           </div>
-          <div class="form-group">
-            <label>E-Mail *</label>
-            <input type="email" name="email" placeholder="max@beispiel.de" required />
+          <div class="ks-field">
+            <input type="email" name="email" placeholder=" " required />
+            <label>E-Mail-Adresse *</label>
           </div>
-          <div class="form-group">
-            <label>Telefon</label>
-            <input type="tel" name="tel" placeholder="+49 89 …" />
+          <div class="ks-field">
+            <input type="tel" name="tel" placeholder=" " />
+            <label>Telefonnummer</label>
           </div>
-          <div class="form-group">
-            <label>Rechtsgebiet</label>
-            <select name="rechtsgebiet">
-              <option value="">Bitte wählen</option>
-              <option>Strafrecht</option>
-              <option>Zivilrecht</option>
-              <option>Arbeitsrecht</option>
-              <option>Mietrecht</option>
-              <option>Erbrecht</option>
-              <option>Gesellschaftsrecht</option>
-              <option>Sonstiges</option>
-            </select>
+          <div class="ks-chips-label">Rechtsgebiet wählen</div>
+          <div class="ks-chips" id="rechtsgebiete">
+            <button type="button" class="chip" data-val="Strafrecht">Strafrecht</button>
+            <button type="button" class="chip" data-val="Zivilrecht">Zivilrecht</button>
+            <button type="button" class="chip" data-val="Arbeitsrecht">Arbeitsrecht</button>
+            <button type="button" class="chip" data-val="Mietrecht">Mietrecht</button>
+            <button type="button" class="chip" data-val="Erbrecht">Erbrecht</button>
+            <button type="button" class="chip" data-val="Gesellschaftsrecht">Gesellschaftsrecht</button>
+            <button type="button" class="chip" data-val="Sonstiges">Sonstiges</button>
           </div>
-          <div class="form-group">
+          <input type="hidden" name="rechtsgebiet" id="rechtsgebietInput" />
+          <div class="ks-field">
+            <textarea name="anliegen" placeholder=" " rows="4" required></textarea>
             <label>Ihr Anliegen *</label>
-            <textarea name="anliegen" rows="5" placeholder="Beschreiben Sie kurz Ihr rechtliches Anliegen …" required></textarea>
           </div>
-          <div class="form-check">
-            <input type="checkbox" id="datenschutz" required />
-            <label for="datenschutz">Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme zu. *</label>
+          <div class="ks-check">
+            <input type="checkbox" id="dsgvo" required />
+            <label for="dsgvo">Ich stimme der <a href="#">Datenschutzerklärung</a> zu. *</label>
           </div>
-          <button type="submit" class="btn btn-gold full-width">
-            <i class="fa-solid fa-paper-plane"></i>
+          <button type="submit" class="ks-submit">
             <span>Anfrage senden</span>
+            <div class="ks-submit-arrow"><i class="fa-solid fa-arrow-right"></i></div>
           </button>
         </form>
       </div>
