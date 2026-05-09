@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anwalt for you – Ihre Kanzlei in besten Händen</title>
+  <meta name="description" content="Anwalt for you – Kompetente Rechtsberatung in allen Rechtsgebieten. Vertrauen. Kompetenz. Ergebnis." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-seal">
+      <svg viewBox="0 0 120 120" class="seal-svg">
+        <circle cx="60" cy="60" r="54" fill="none" stroke="#b8973a" stroke-width="1"/>
+        <circle cx="60" cy="60" r="46" fill="none" stroke="#b8973a" stroke-width="0.5" stroke-dasharray="3 5"/>
+        <text x="60" y="55" text-anchor="middle" font-family="Cormorant Garamond" font-size="22" fill="#b8973a" font-weight="300">AFY</text>
+        <text x="60" y="72" text-anchor="middle" font-family="Inter" font-size="6" fill="#b8973a" letter-spacing="3">KANZLEI</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-brand">
+      <div class="nav-monogram">AFY</div>
+      <div class="nav-name">
+        <span>Anwalt</span>
+        <span class="gold">for you</span>
+      </div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#leistungen">Rechtsgebiete</a>
+      <a href="#profil">Profil</a>
+      <a href="#grundsaetze">Grundsätze</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="nav-cta">Beratung anfragen</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero / Visitenkarte -->
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <div class="hero-tag reveal">Zugelassen beim Landgericht München I</div>
+      <h1 class="hero-title reveal">
+        Ihr Recht.<br/>
+        <em>Unser Auftrag.</em>
+      </h1>
+      <p class="hero-sub reveal">Wir vertreten Ihre Interessen mit Leidenschaft, Präzision und jahrelanger Erfahrung – in und außerhalb des Gerichtssaals.</p>
+      <div class="hero-actions reveal">
+        <a href="#kontakt" class="btn btn-gold">Erstberatung vereinbaren</a>
+        <a href="#leistungen" class="btn btn-outline">Rechtsgebiete</a>
+      </div>
+      <div class="hero-badges reveal">
+        <div class="badge"><i class="fa-solid fa-scale-balanced"></i><span>20+ Jahre Erfahrung</span></div>
+        <div class="badge"><i class="fa-solid fa-shield-halved"></i><span>Vertraulich & diskret</span></div>
+        <div class="badge"><i class="fa-solid fa-award"></i><span>Top-bewertet</span></div>
+      </div>
+    </div>
+    <div class="hero-right reveal">
+      <div class="card-3d" id="card3d">
+        <div class="card-front">
+          <div class="card-seal">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(184,151,58,0.4)" stroke-width="1"/>
+              <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(184,151,58,0.25)" stroke-width="0.5" stroke-dasharray="2 4"/>
+              <text x="50" y="46" text-anchor="middle" font-family="Cormorant Garamond" font-size="18" fill="#b8973a" font-weight="300">AFY</text>
+              <text x="50" y="60" text-anchor="middle" font-family="Inter" font-size="5" fill="rgba(184,151,58,0.7)" letter-spacing="2">KANZLEI</text>
+            </svg>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-name">
+            <p class="card-title-text">Rechtsanwalt</p>
+            <h2>Anwalt for you</h2>
+            <p class="card-sub">Fachanwalt für Zivilrecht & Strafrecht</p>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="card-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+49 89 123 456 78</span>
+            </div>
+            <div class="card-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@anwalt-for-you.de</span>
+            </div>
+            <div class="card-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Maximilianstr. 1 · 80539 München</span>
+            </div>
+          </div>
+          <div class="card-corner top-left"></div>
+          <div class="card-corner top-right"></div>
+          <div class="card-corner bottom-left"></div>
+          <div class="card-corner bottom-right"></div>
+        </div>
+      </div>
+      <p class="card-hint"><i class="fa-solid fa-hand-pointer"></i> Karte bewegen für 3D-Effekt</p>
+    </div>
+  </section>
+
+  <!-- Zitat / Trennlinie -->
+  <div class="quote-bar">
+    <div class="container">
+      <blockquote>
+        <span class="quote-mark">"</span>
+        Das Recht ist die Kunst des Guten und Gerechten.
+        <span class="quote-mark">"</span>
+      </blockquote>
+      <cite>— Ulpianus, römischer Rechtsgelehrter</cite>
+    </div>
+  </div>
+
+  <!-- Rechtsgebiete -->
+  <section class="section leistungen" id="leistungen">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="ornament"><span></span><i class="fa-solid fa-scale-balanced"></i><span></span></div>
+        <h2>Rechtsgebiete</h2>
+        <p>Kompetente Beratung und Vertretung in allen wesentlichen Rechtsgebieten.</p>
+      </div>
+      <div class="leistungen-grid">
+        <div class="leistung-card reveal" data-delay="0">
+          <div class="lk-icon"><i class="fa-solid fa-gavel"></i></div>
+          <h3>Strafrecht</h3>
+          <p>Kompetente Strafverteidigung in allen Instanzen – vom ersten Verhör bis zur Revision.</p>
+          <ul>
+            <li>Wirtschaftsstrafrecht</li>
+            <li>Verkehrsdelikte</li>
+            <li>Körperverletzung</li>
+          </ul>
+        </div>
+        <div class="leistung-card reveal" data-delay="100">
+          <div class="lk-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Zivilrecht</h3>
+          <p>Durchsetzung und Abwehr zivilrechtlicher Ansprüche mit strategischem Weitblick.</p>
+          <ul>
+            <li>Vertragsrecht</li>
+            <li>Schadensersatz</li>
+            <li>Mahnverfahren</li>
+          </ul>
+        </div>
+        <div class="leistung-card reveal" data-delay="200">
+          <div class="lk-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <h3>Arbeitsrecht</h3>
+          <p>Ihr starker Partner bei Kündigung, Abfindung und arbeitsrechtlichen Streitigkeiten.</p>
+          <ul>
+            <li>Kündigungsschutz</li>
+            <li>Abfindungsverhandlung</li>
+            <li>Arbeitszeugnis</li>
+          </ul>
+        </div>
+        <div class="leistung-card reveal" data-delay="0">
+          <div class="lk-icon"><i class="fa-solid fa-house"></i></div>
+          <h3>Mietrecht</h3>
+          <p>Beratung für Mieter und Vermieter in allen mietrechtlichen Angelegenheiten.</p>
+          <ul>
+            <li>Mieterhöhung</li>
+            <li>Räumungsklagen</li>
+            <li>Betriebskosten</li>
+          </ul>
+        </div>
+        <div class="leistung-card reveal" data-delay="100">
+          <div class="lk-icon"><i class="fa-solid fa-scroll"></i></div>
+          <h3>Erbrecht</h3>
+          <p>Sichere Nachlassplanung und Durchsetzung von Erbansprüchen.</p>
+          <ul>
+            <li>Testament & Erbvertrag</li>
+            <li>Pflichtteilsansprüche</li>
+            <li>Erbschaftssteuer</li>
+          </ul>
+        </div>
+        <div class="leistung-card reveal" data-delay="200">
+          <div class="lk-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Gesellschaftsrecht</h3>
+          <p>Rechtssichere Gründung und Begleitung Ihres Unternehmens in allen Phasen.</p>
+          <ul>
+            <li>GmbH & AG Gründung</li>
+            <li>Gesellschafterstreitigkeiten</li>
+            <li>M&A Transaktionen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profil / Über -->
+  <section class="section profil dark-section" id="profil">
+    <div class="container">
+      <div class="profil-layout">
+        <div class="profil-visual reveal">
+          <div class="profil-frame">
+            <div class="profil-avatar">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="profil-ring r1"></div>
+            <div class="profil-ring r2"></div>
+          </div>
+          <div class="profil-stats">
+            <div class="pstat reveal" data-delay="0">
+              <span class="pstat-num" data-target="20">0</span><span>+</span>
+              <p>Jahre Erfahrung</p>
+            </div>
+            <div class="pstat reveal" data-delay="100">
+              <span class="pstat-num" data-target="1200">0</span><span>+</span>
+              <p>Mandate</p>
+            </div>
+            <div class="pstat reveal" data-delay="200">
+              <span class="pstat-num" data-target="97">0</span><span>%</span>
+              <p>Erfolgsquote</p>
+            </div>
+          </div>
+        </div>
+        <div class="profil-content reveal">
+          <div class="ornament left-align"><span></span><i class="fa-solid fa-scale-balanced"></i><span></span></div>
+          <h2>Anwalt for you –<br/><em>Ihr verlässlicher Partner</em></h2>
+          <p>Mit über 20 Jahren Berufserfahrung stehen wir für kompetente, zielgerichtete und persönliche Rechtsberatung. Wir hören zu, analysieren präzise und handeln entschlossen – immer im Interesse unserer Mandanten.</p>
+          <p>Unsere Kanzlei vereint akademische Exzellenz mit praktischer Stärke. Ob außergerichtliche Einigung oder Prozessvertretung – wir finden den besten Weg für Sie.</p>
+          <div class="profil-leistungen">
+            <div class="pl-item"><i class="fa-solid fa-check"></i> Erstberatung innerhalb von 24 Stunden</div>
+            <div class="pl-item"><i class="fa-solid fa-check"></i> Transparente Kostenstruktur</div>
+            <div class="pl-item"><i class="fa-solid fa-check"></i> Persönliche Erreichbarkeit</div>
+            <div class="pl-item"><i class="fa-solid fa-check"></i> Bundesweite Vertretung</div>
+          </div>
+          <div class="profil-abschluss">
+            <div class="abschluss-item"><span>Studium</span><p>Ludwig-Maximilians-Universität München, Erstes Staatsexamen 2002</p></div>
+            <div class="abschluss-item"><span>Zulassung</span><p>Rechtsanwaltskammer München seit 2004</p></div>
+            <div class="abschluss-item"><span>Auszeichnung</span><p>FOCUS Empfehlung – TOP-Anwalt 2022, 2023, 2024</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grundsätze -->
+  <section class="section grundsaetze" id="grundsaetze">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="ornament"><span></span><i class="fa-solid fa-scale-balanced"></i><span></span></div>
+        <h2>Unsere Grundsätze</h2>
+        <p>Das sind die Werte, die unser Handeln leiten.</p>
+      </div>
+      <div class="grundsaetze-grid">
+        <div class="gs-card reveal" data-delay="0">
+          <div class="gs-num">I</div>
+          <h4>Vertraulichkeit</h4>
+          <p>Absolute Verschwiegenheit und Diskretion sind das Fundament unserer Mandatsbeziehungen.</p>
+        </div>
+        <div class="gs-card reveal" data-delay="100">
+          <div class="gs-num">II</div>
+          <h4>Kompetenz</h4>
+          <p>Kontinuierliche Fortbildung und tiefes Fachwissen garantieren Ihnen stets die bestmögliche Vertretung.</p>
+        </div>
+        <div class="gs-card reveal" data-delay="200">
+          <div class="gs-num">III</div>
+          <h4>Ergebnis</h4>
+          <p>Wir denken strategisch und handeln konsequent – mit dem Ziel, für Sie das bestmögliche Ergebnis zu erzielen.</p>
+        </div>
+        <div class="gs-card reveal" data-delay="300">
+          <div class="gs-num">IV</div>
+          <h4>Transparenz</h4>
+          <p>Klare Kommunikation, ehrliche Einschätzung und faire Honorare – ohne versteckte Kosten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stimmen -->
+  <section class="section stimmen dark-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="ornament"><span></span><i class="fa-solid fa-quote-left"></i><span></span></div>
+        <h2>Mandantenstimmen</h2>
+      </div>
+      <div class="stimmen-slider">
+        <div class="stimmen-track" id="stimmenTrack">
+          <div class="stimmen-card">
+            <div class="stimmen-stars">★★★★★</div>
+            <p>"Hervorragende Beratung in einem komplexen Erbschaftsstreit. Professionell, empathisch und zielorientiert. Ich kann diese Kanzlei uneingeschränkt empfehlen."</p>
+            <div class="stimmen-author"><strong>Dr. Klaus M.</strong><span>München</span></div>
+          </div>
+          <div class="stimmen-card">
+            <div class="stimmen-stars">★★★★★</div>
+            <p>"Im Arbeitsrecht hatte ich das Gefühl, endlich jemanden zu haben, der wirklich kämpft. Das Ergebnis übertraf alle Erwartungen. Absolut empfehlenswert!"</p>
+            <div class="stimmen-author"><strong>Andrea S.</strong><span>Augsburg</span></div>
+          </div>
+          <div class="stimmen-card">
+            <div class="stimmen-stars">★★★★★</div>
+            <p>"Schnell, kompetent und immer erreichbar. Mein Mietrechtsfall wurde hervorragend gelöst. Vielen Dank für die ausgezeichnete Arbeit!"</p>
+            <div class="stimmen-author"><strong>Thomas B.</strong><span>Ingolstadt</span></div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="sPrev"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="slider-dots" id="sDots"></div>
+          <button class="slider-btn" id="sNext"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="section kontakt" id="kontakt">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="ornament"><span></span><i class="fa-solid fa-envelope"></i><span></span></div>
+        <h2>Kontakt aufnehmen</h2>
+        <p>Schildern Sie uns Ihr Anliegen – wir melden uns innerhalb von 24 Stunden.</p>
+      </div>
+      <div class="kontakt-layout">
+        <div class="kontakt-info reveal">
+          <div class="ki-card">
+            <div class="ki-icon"><i class="fa-solid fa-phone"></i></div>
+            <div><strong>Telefon</strong><a href="tel:+498912345678">+49 89 123 456 78</a></div>
+          </div>
+          <div class="ki-card">
+            <div class="ki-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div><strong>E-Mail</strong><a href="mailto:info@anwalt-for-you.de">info@anwalt-for-you.de</a></div>
+          </div>
+          <div class="ki-card">
+            <div class="ki-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div><strong>Kanzlei</strong><span>Maximilianstraße 1<br/>80539 München</span></div>
+          </div>
+          <div class="ki-card">
+            <div class="ki-icon"><i class="fa-solid fa-clock"></i></div>
+            <div><strong>Sprechzeiten</strong><span>Mo–Fr: 08:00 – 18:00 Uhr<br/>Notfall: 24/7 erreichbar</span></div>
+          </div>
+          <div class="ki-note">
+            <i class="fa-solid fa-shield-halved"></i>
+            <p>Alle Anfragen werden streng vertraulich behandelt. Ihre Daten werden nicht an Dritte weitergegeben.</p>
+          </div>
+        </div>
+        <form class="kontakt-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Vorname *</label>
+              <input type="text" name="vorname" placeholder="Max" required />
+            </div>
+            <div class="form-group">
+              <label>Nachname *</label>
+              <input type="text" name="nachname" placeholder="Mustermann" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>E-Mail *</label>
+            <input type="email" name="email" placeholder="max@beispiel.de" required />
+          </div>
+          <div class="form-group">
+            <label>Telefon</label>
+            <input type="tel" name="tel" placeholder="+49 89 …" />
+          </div>
+          <div class="form-group">
+            <label>Rechtsgebiet</label>
+            <select name="rechtsgebiet">
+              <option value="">Bitte wählen</option>
+              <option>Strafrecht</option>
+              <option>Zivilrecht</option>
+              <option>Arbeitsrecht</option>
+              <option>Mietrecht</option>
+              <option>Erbrecht</option>
+              <option>Gesellschaftsrecht</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Ihr Anliegen *</label>
+            <textarea name="anliegen" rows="5" placeholder="Beschreiben Sie kurz Ihr rechtliches Anliegen …" required></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="datenschutz" required />
+            <label for="datenschutz">Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme zu. *</label>
+          </div>
+          <button type="submit" class="btn btn-gold full-width">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Anfrage senden</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="nav-monogram">AFY</div>
+            <div class="nav-name"><span>Anwalt</span><span class="gold">for you</span></div>
+          </div>
+          <p>Ihre Kanzlei für Vertrauen, Kompetenz und Ergebnis – in München und bundesweit.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Rechtsgebiete</h5>
+          <a href="#leistungen">Strafrecht</a>
+          <a href="#leistungen">Zivilrecht</a>
+          <a href="#leistungen">Arbeitsrecht</a>
+          <a href="#leistungen">Mietrecht</a>
+          <a href="#leistungen">Erbrecht</a>
+        </div>
+        <div class="footer-col">
+          <h5>Kanzlei</h5>
+          <a href="#profil">Profil</a>
+          <a href="#grundsaetze">Grundsätze</a>
+          <a href="#kontakt">Kontakt</a>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
+        <div class="footer-col">
+          <h5>Kontakt</h5>
+          <a href="tel:+498912345678">+49 89 123 456 78</a>
+          <a href="mailto:info@anwalt-for-you.de">info@anwalt-for-you.de</a>
+          <p style="color:var(--clr-muted);font-size:0.82rem;margin-top:8px">Maximilianstraße 1<br/>80539 München</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Anwalt for you · Rechtsanwaltskanzlei · Alle Rechte vorbehalten</p>
+        <p>Webdesign: <strong>ChefBlick</strong> · 85410 Haag a. d. Amper</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Nach oben">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
